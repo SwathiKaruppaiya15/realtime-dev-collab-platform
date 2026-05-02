@@ -1,0 +1,179 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.4rem 1rem;
+  background: #181825;
+  border-bottom: 1px solid #313244;
+  flex-shrink: 0;
+}
+
+.filename {
+  font-size: 0.85rem;
+  color: #cdd6f4;
+  flex: 1;
+}
+
+.ext {
+  color: #6c7086;
+  font-size: 0.78rem;
+}
+
+.langSelect {
+  background: #313244;
+  color: #cdd6f4;
+  border: 1px solid #45475a;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.langSelect:focus {
+  outline: none;
+  border-color: #89b4fa;
+}
+
+.saveBtn {
+  padding: 0.3rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.saved {
+  background: #313244;
+  color: #6c7086;
+}
+
+.unsaved {
+  background: #a6e3a1;
+  color: #1e1e2e;
+}
+
+.activeCursors {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.cursorBadge {
+  font-size: 0.7rem;
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+  color: #1e1e2e;
+  font-weight: bold;
+}
+
+.readonlyBadge {
+  font-size: 0.75rem;
+  color: #f38ba8;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid #f38ba8;
+  border-radius: 4px;
+}
+
+/* ── Run button ── */
+.runBtn {
+  padding: 0.3rem 0.85rem;
+  background: #a6e3a1;
+  color: #1e1e2e;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.runBtn:hover:not(:disabled) { background: #94e2d5; }
+.runBtn:disabled {
+  background: #45475a;
+  color: #6c7086;
+  cursor: not-allowed;
+}
+
+/* ── Output panel ── */
+.outputPanel {
+  flex-shrink: 0;
+  height: 160px;
+  background: #11111b;
+  border-top: 2px solid #313244;
+  display: flex;
+  flex-direction: column;
+}
+
+.outputHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 0.75rem;
+  background: #181825;
+  border-bottom: 1px solid #313244;
+  font-size: 0.75rem;
+  color: #6c7086;
+  flex-shrink: 0;
+}
+
+.statusOk  { color: #a6e3a1; font-weight: bold; }
+.statusErr { color: #f38ba8; font-weight: bold; }
+
+.closeOutput {
+  background: none;
+  border: none;
+  color: #6c7086;
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 0;
+  line-height: 1;
+}
+.closeOutput:hover { color: #f38ba8; }
+
+.outputBody {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.5rem 0.75rem;
+}
+
+.stdout {
+  color: #cdd6f4;
+  font-family: 'Courier New', monospace;
+  font-size: 0.83rem;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.stderr {
+  color: #f38ba8;
+  font-family: 'Courier New', monospace;
+  font-size: 0.83rem;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.outputHint {
+  color: #6c7086;
+  font-size: 0.82rem;
+  font-style: italic;
+  margin: 0;
+}
+
+/* ── HTML Preview iframe ── */
+.previewFrame {
+  flex: 1;
+  width: 100%;
+  border: none;
+  background: #fff;
+}
+
+/* Make output panel taller when showing preview */
+.outputPanel:has(.previewFrame) {
+  height: 280px;
+}

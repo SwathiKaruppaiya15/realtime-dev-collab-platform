@@ -1,0 +1,111 @@
+# ─── Backend (Spring Boot / Maven) ──────────────────────────────────────────
+
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+backend/.mvn/wrapper/maven-wrapper.properties
+!backend/.mvn/wrapper/MavenWrapperDownloader.java
+
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+
+# Maven
+backend/pom.xml.tag
+backend/pom.xml.releaseBackup
+backend/pom.xml.versionsBackup
+backend/pom.xml.next
+backend/release.properties
+backend/dependency-reduced-pom.xml
+backend/buildNumber.properties
+backend/.mvn/timing.properties
+
+# Spring Boot
+backend/HELP.md
+
+# ─── Frontend (React / Vite / Node) ──────────────────────────────────────────
+
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.vite/
+
+# Logs
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+frontend/.pnpm-debug.log*
+
+# ─── Secrets & Config ────────────────────────────────────────────────────────
+
+# NEVER commit API keys or passwords
+backend/src/main/resources/application-local.properties
+backend/src/main/resources/application-prod.properties
+.env
+.env.local
+.env.production
+.env.*
+
+# ─── Docker ──────────────────────────────────────────────────────────────────
+
+# Temp code execution directories
+projects/
+coderoom/
+
+# ─── IDE & Editor ────────────────────────────────────────────────────────────
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# VS Code 
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+*.code-workspace
+
+# Eclipse
+.classpath
+.project
+.settings/
+.factorypath
+
+# NetBeans
+nbproject/private/
+nbbuild/
+nbdist/
+.nb-gradle/
+
+# ─── OS Files ────────────────────────────────────────────────────────────────
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ─── Misc ────────────────────────────────────────────────────────────────────
+
+*.log
+*.tmp
+*.swp
+*.swo
+.cache/

@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background: #313244;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #cba6f7;
+}
+
+.card form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.card input {
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #45475a;
+  background: #1e1e2e;
+  color: #cdd6f4;
+  font-size: 0.95rem;
+}
+
+.card input:focus {
+  outline: none;
+  border-color: #89b4fa;
+}
+
+.card button {
+  padding: 0.65rem;
+  background: #89b4fa;
+  color: #1e1e2e;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.card button:hover {
+  background: #74c7ec;
+}
+
+.card p {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #a6adc8;
+}
+
+.error {
+  background: #f38ba8;
+  color: #1e1e2e;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}

@@ -1,0 +1,263 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #1e1e2e;
+}
+
+/* ── Tab bar ── */
+.tabBar {
+  display: flex;
+  background: #181825;
+  border-bottom: 1px solid #313244;
+  flex-shrink: 0;
+}
+
+.tabBtn, .activeTabBtn {
+  padding: 0.45rem 1.1rem;
+  border: none;
+  font-size: 0.82rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.tabBtn {
+  background: transparent;
+  color: #6c7086;
+}
+.tabBtn:hover { color: #cdd6f4; }
+
+.activeTabBtn {
+  background: #313244;
+  color: #cdd6f4;
+  border-bottom: 2px solid #89b4fa;
+}
+
+/* ── Run Code Tab ── */
+.runTab {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+.runToolbar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  background: #181825;
+  border-bottom: 1px solid #313244;
+  flex-shrink: 0;
+}
+
+.select {
+  background: #313244;
+  color: #cdd6f4;
+  border: 1px solid #45475a;
+  border-radius: 4px;
+  padding: 0.3rem 0.5rem;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+
+.runBtn {
+  padding: 0.35rem 1rem;
+  background: #a6e3a1;
+  color: #1e1e2e;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+.runBtn:disabled {
+  background: #45475a;
+  color: #6c7086;
+  cursor: not-allowed;
+}
+
+.codeInput {
+  flex: 1;
+  background: #1e1e2e;
+  color: #cdd6f4;
+  border: none;
+  border-bottom: 1px solid #313244;
+  padding: 0.75rem;
+  font-family: 'Courier New', monospace;
+  font-size: 0.88rem;
+  resize: none;
+  outline: none;
+  min-height: 160px;
+}
+
+.outputArea {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.6rem 0.75rem;
+  background: #11111b;
+  min-height: 120px;
+}
+
+.outputHeader {
+  font-size: 0.72rem;
+  color: #6c7086;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.4rem;
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.statusOk {
+  color: #a6e3a1;
+  font-weight: bold;
+}
+.statusErr {
+  color: #f38ba8;
+  font-weight: bold;
+}
+
+.stdout {
+  color: #cdd6f4;
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  white-space: pre-wrap;
+  margin: 0 0 0.4rem;
+}
+
+.stderr {
+  color: #f38ba8;
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.hint {
+  color: #6c7086;
+  font-size: 0.82rem;
+  font-style: italic;
+}
+
+/* ── Interactive Terminal ── */
+.interactiveTerminal {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #11111b;
+  cursor: text;
+}
+
+.terminalHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.4rem 0.75rem;
+  background: #181825;
+  border-bottom: 1px solid #313244;
+  flex-shrink: 0;
+}
+
+.terminalTitle {
+  font-size: 0.8rem;
+  color: #cdd6f4;
+  font-weight: bold;
+}
+
+.connectedDot {
+  font-size: 0.72rem;
+  color: #a6e3a1;
+  margin-left: auto;
+}
+.disconnectedDot {
+  font-size: 0.72rem;
+  color: #f38ba8;
+  margin-left: auto;
+}
+
+.clearBtn {
+  background: none;
+  border: 1px solid #45475a;
+  border-radius: 4px;
+  color: #6c7086;
+  font-size: 0.72rem;
+  padding: 0.15rem 0.5rem;
+  cursor: pointer;
+}
+.clearBtn:hover { color: #cdd6f4; border-color: #6c7086; }
+
+.terminalOutput {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.5rem 0.75rem;
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.termCmd {
+  display: block;
+  color: #89b4fa;
+  white-space: pre-wrap;
+}
+
+.termOut {
+  display: block;
+  color: #cdd6f4;
+  white-space: pre-wrap;
+}
+
+.termInfo {
+  display: block;
+  color: #6c7086;
+  font-style: italic;
+  white-space: pre-wrap;
+}
+
+.terminalInput {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.75rem;
+  background: #181825;
+  border-top: 1px solid #313244;
+  flex-shrink: 0;
+}
+
+.prompt {
+  color: #a6e3a1;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.terminalInput input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #cdd6f4;
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  outline: none;
+  caret-color: #cdd6f4;
+}
+
+.terminalInput input::placeholder {
+  color: #45475a;
+}
+
+.terminalInput input:disabled {
+  color: #45475a;
+}
+
+/* ── HTML Preview iframe ── */
+.previewFrame {
+  flex: 1;
+  width: 100%;
+  border: none;
+  background: #fff;
+  min-height: 200px;
+}

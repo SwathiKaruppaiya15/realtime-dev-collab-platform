@@ -1,0 +1,126 @@
+.container {
+  position: relative;
+}
+
+.bell {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: relative;
+  padding: 0.2rem 0.4rem;
+  border-radius: 5px;
+  transition: background 0.15s;
+}
+.bell:hover { background: #313244; }
+
+.badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: #f38ba8;
+  color: #1e1e2e;
+  font-size: 0.65rem;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+}
+
+.panel {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: 320px;
+  background: #313244;
+  border-radius: 8px;
+  border: 1px solid #45475a;
+  z-index: 100;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #45475a;
+  font-size: 0.88rem;
+  font-weight: bold;
+  color: #cdd6f4;
+}
+
+.close {
+  background: none;
+  border: none;
+  color: #6c7086;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.close:hover { color: #f38ba8; }
+
+.loading, .empty {
+  padding: 1rem;
+  color: #6c7086;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.item {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #45475a;
+}
+.item:last-child { border-bottom: none; }
+
+.itemContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.83rem;
+  color: #cdd6f4;
+  margin-bottom: 0.5rem;
+}
+
+.time {
+  font-size: 0.72rem;
+  color: #6c7086;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.accept {
+  padding: 0.25rem 0.7rem;
+  background: #a6e3a1;
+  color: #1e1e2e;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.accept:hover { background: #94e2d5; }
+
+.reject {
+  padding: 0.25rem 0.7rem;
+  background: #313244;
+  color: #f38ba8;
+  border: 1px solid #f38ba8;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+.reject:hover { background: rgba(243,139,168,0.1); }

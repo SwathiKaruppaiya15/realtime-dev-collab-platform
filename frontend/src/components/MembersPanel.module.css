@@ -1,0 +1,134 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 70px;
+}
+
+.panel {
+  background: #313244;
+  border-radius: 10px;
+  width: 420px;
+  max-height: 75vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem 1.1rem;
+  border-bottom: 1px solid #45475a;
+  flex-shrink: 0;
+}
+
+.header h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #cba6f7;
+}
+
+.close {
+  background: none;
+  border: none;
+  color: #6c7086;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.close:hover { color: #f38ba8; }
+
+.error {
+  background: rgba(243,139,168,0.12);
+  color: #f38ba8;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.82rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+}
+
+.list {
+  padding: 0.4rem 0;
+}
+
+.member {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1.1rem;
+  border-bottom: 1px solid #45475a;
+  gap: 0.5rem;
+}
+.member:last-child { border-bottom: none; }
+
+.info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.name {
+  font-size: 0.88rem;
+  color: #cdd6f4;
+  font-weight: 500;
+}
+
+.youTag {
+  font-size: 0.72rem;
+  color: #6c7086;
+  font-weight: normal;
+}
+
+.email {
+  font-size: 0.75rem;
+  color: #6c7086;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-shrink: 0;
+}
+
+.roleBadge {
+  font-size: 0.72rem;
+  font-weight: bold;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  color: #1e1e2e;
+}
+
+.roleSelect {
+  background: #1e1e2e;
+  color: #cdd6f4;
+  border: 1px solid #45475a;
+  border-radius: 4px;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.78rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.removeBtn {
+  background: none;
+  border: none;
+  color: #6c7086;
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 0.15rem 0.35rem;
+  border-radius: 3px;
+}
+.removeBtn:hover {
+  background: rgba(243,139,168,0.15);
+  color: #f38ba8;
+}

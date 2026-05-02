@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #1e1e2e;
+  color: #cdd6f4;
+  min-height: 100vh;
+}
+
+input, button, select {
+  font-family: inherit;
+}
+
+a {
+  color: #89b4fa;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
